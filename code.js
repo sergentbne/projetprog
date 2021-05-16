@@ -1,7 +1,19 @@
+var vies = 3;
+
 function start(etape) {
+  const etapedata = etapes[etape];
+
+  if (etapedata.type=="mort"){
+    vies = vies - 1;
+    if (vies == 0){
+      
+    } 
+  }
+ const vie = document.getElementById("vie")
+vie.innerText = "Il vous reste " + vies + " vies.";
+
   const e = document.getElementById("questions");
   e.innerHTML = "";
-  const etapedata = etapes[etape];
   const titre = document.createElement("h1");
   titre.innerText = etapedata.label;
   e.appendChild(titre);
@@ -11,6 +23,24 @@ function start(etape) {
   for (const reponse of reponses) {
     const bouton = document.createElement("button");
     bouton.innerText = reponse.label;
+    bouton.onclick = ()=>{
+      start(reponse.destination);
+      const v = document.getElementById("video");
+      var source = document.createElement('source');
+
+      source.setAttribute('src', reponse.video);
+
+      v.appendChild(source);
+      v.play();
+
+      v.style.display = "block"
+      v.requestFullscreen();
+      
+    };
     e.appendChild(bouton);
   }
+const vid = document.getElementById("video")
+vid.onended = function() {
+    vid.style.display = "none";
+};
 }

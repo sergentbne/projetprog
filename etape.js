@@ -4,17 +4,26 @@
 
 etapes = [
   {
+    label: "vous êtes mort",
+    type: "mort",
+    reponses: [
+      {
+        label: "Recommencer",
+        destination: 1,
+      }]
+  },
+  {
     label: "vous êtes dans l'avion",
     reponses: [
       {
         label: "vous vous endormez et pensez à votre poisson rouge",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 3,
+        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        destination: 1,
       },
       {
         label: "vous combattez les terroriste à main nue",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 3,
+        destination: 0,
       },
       {
         label:
