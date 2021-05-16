@@ -6,7 +6,8 @@ function start(etape) {
   if (etapedata.type=="mort"){
     vies = vies - 1;
     if (vies == 0){
-      
+      start(1);
+      return;
     } 
   }
  const vie = document.getElementById("vie")

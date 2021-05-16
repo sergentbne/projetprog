@@ -9,8 +9,14 @@ etapes = [
     reponses: [
       {
         label: "Recommencer",
-        destination: 1,
+        destination: 2,
       }]
+  },
+  {
+    label: "Game over",
+    type: "gameover",
+    reponses: [
+      ]
   },
   {
     label: "vous êtes dans l'avion",
