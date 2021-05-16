@@ -35,17 +35,17 @@ etapes = [
       {
         label: "vous sautez sans parachute",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        destination: 3,
       },
       {
         label: "steve vous mange",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        destination: 3,
       },
       {
         label: "REEEEEEEEEEEEEE",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        destination: 2,
       },
     ],
   },
@@ -55,12 +55,12 @@ etapes = [
       {
         label: "vous sautez sans parachute",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        destination: 2,
       },
       {
         label: "steve vous mange",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        destination: 3,
       },
       {
         label: "REEEEEEEEEEEEEE",
