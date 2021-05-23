@@ -1,6 +1,6 @@
 //3= t'es mort
-//2= tu progresse
-//1= tu pert 1 pv
+//2= tu progresses
+//1= tu perds 1 pv
 
 etapes = [
   {
@@ -24,7 +24,7 @@ etapes = [
       {
         label: "vous vous endormez et pensez à votre poisson rouge",
         video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        destination: 1,
+        destination: 5,
       },
       {
         label: "vous combattez les terroriste à main nue",
@@ -35,50 +35,70 @@ etapes = [
         label:
           "vous combattez les terroriste avec le fusil que vous avez apporté avec vous",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 2,
+        destination: 3,
       },
       {
         label: "vous sautez sans parachute",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0,
+      },
+    ],
+  },
+  {
+    label: "vous êtes dans la ferme",
+    reponses: [
+      {
+        label: "vous sautez sans parachute",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0,
+      },
+      {
+        label: "steve vous mange",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0,
+      },
+      {
+        label: "REEEEEEEEEEEEEE",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 2,
+      },
+    ],
+  },
+  {
+    label: "vous êtes dans la ferme",
+    reponses: [
+      {
+        label: "vous sautez sans parachute",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0  ,
+      },
+      {
+        label: "steve vous mange",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0,
+      },
+      {
+        label: "REEEEEEEEEEEEEE",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 1,
       },
     ],
   },
   {
-    label: "vous êtes dans la ferme",
+    label: "minecraft j",
     reponses: [
       {
-        label: "vous sautez sans parachute",
+        label: "mining stone",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 3,
+        destination: 0  ,
       },
       {
-        label: "steve vous mange",
+        label: "lava",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 3,
+        destination: 0,
       },
       {
-        label: "REEEEEEEEEEEEEE",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 2,
-      },
-    ],
-  },
-  {
-    label: "vous êtes dans la ferme",
-    reponses: [
-      {
-        label: "vous sautez sans parachute",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 2,
-      },
-      {
-        label: "steve vous mange",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 4,
-      },
-      {
-        label: "REEEEEEEEEEEEEE",
+        label: "woter",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 1,
       },
