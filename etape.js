@@ -3,7 +3,7 @@
 //1= tu perds 1 pv
 
 etapes = [
-  {
+  { // 0
     label: "vous êtes mort",
     type: "mort",
     reponses: [
@@ -12,93 +12,93 @@ etapes = [
         destination: 2,
       }]
   },
-  {
+  { // 1
     label: "Game over",
     type: "gameover",
     reponses: [
       ]
   },
-  {
-    label: "vous êtes dans l'avion",
+  { // 2- Debut
+    label: "Vous avez faim. Vous voulez un RoadRunner pour le souper",
     reponses: [
       {
-        label: "vous vous endormez et pensez à votre poisson rouge",
-        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        destination: 5,
+        label: "Allons tendre un piege !",
+        video: "videos/reflexion.mp3",
+        destination: 3,
       },
       {
-        label: "vous combattez les terroriste à main nue",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Rien de tel que des explosifs",
+        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
         destination: 0,
       },
       {
         label:
-          "vous combattez les terroriste avec le fusil que vous avez apporté avec vous",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+          "Il faut etre capable de le rattraper",
+        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
         destination: 3,
       },
       {
-        label: "vous sautez sans parachute",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0,
+        label: "Impossible, laissons faire",
+        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        destination: 1,
       },
     ],
   },
-  {
-    label: "vous êtes dans la ferme",
+  {  // 3- Piege
+    label: "Tendons un piege",
     reponses: [
       {
-        label: "vous sautez sans parachute",
+        label: "Un enorme boulet pour lui tomber sur la tete",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0,
       },
       {
-        label: "steve vous mange",
+        label: "Des graines pour oiseau magnetiques ?",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0,
       },
       {
-        label: "REEEEEEEEEEEEEE",
+        label: "Un trou, un gros trou",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 2,
       },
     ],
   },
-  {
-    label: "vous êtes dans la ferme",
+  { // 4- Explosifs
+    label: "Kaboum !",
     reponses: [
       {
-        label: "vous sautez sans parachute",
+        label: "Une bombe a partir d'un cerf-volant",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0  ,
       },
       {
-        label: "steve vous mange",
+        label: "Une offre de graines gratuites qui explosent",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0,
       },
       {
-        label: "REEEEEEEEEEEEEE",
+        label: "",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 1,
       },
     ],
   },
-  {
-    label: "minecraft j",
+  { // 5- Rattraper
+    label: "Commandons des accessoires a ACME",
     reponses: [
       {
-        label: "mining stone",
+        label: "Une fusee",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0  ,
       },
       {
-        label: "lava",
+        label: "Des patins a roulettes",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0,
       },
       {
-        label: "woter",
+        label: "Autre chose",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 1,
       },
