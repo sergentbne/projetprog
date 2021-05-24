@@ -16,6 +16,7 @@
     background-color: green;
     text-align:center;
     line-height: 100px;
+    font-size: xx-large;
 }
 
 h1 {
@@ -26,8 +27,4 @@ button {
     display: block;
     margin: 0 auto 20px;
     text-align: center;
-}
-
-#vie {
-    font-size: xx-large;
 }

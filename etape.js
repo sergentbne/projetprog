@@ -23,12 +23,12 @@ etapes = [
     reponses: [
       {
         label: "Allons tendre un piege !",
-        video: "videos/reflexion.mp3",
+        video: "videos/reflexion.mp4",
         destination: 3,
       },
       {
         label: "Rien de tel que des explosifs",
-        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        video: "videos/reflexion2.mov",
         destination: 0,
       },
       {
@@ -64,7 +64,27 @@ etapes = [
       },
     ],
   },
-  { // 4- Explosifs
+  {  // 4- Piege pt 2a
+    label: "",
+    reponses: [
+      {
+        label: "Un enorme boulet pour lui tomber sur la tete",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0,
+      },
+      {
+        label: "Des graines pour oiseau magnetiques ?",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 0,
+      },
+      {
+        label: "Un trou, un gros trou",
+        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        destination: 2,
+      },
+    ],
+  },
+  { // 5- Explosifs
     label: "Kaboum !",
     reponses: [
       {
@@ -84,7 +104,7 @@ etapes = [
       },
     ],
   },
-  { // 5- Rattraper
+  { // 6- Rattraper
     label: "Commandons des accessoires a ACME",
     reponses: [
       {
