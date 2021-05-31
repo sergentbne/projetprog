@@ -89,7 +89,7 @@ etapes = [
     reponses: [
       {
         label: "Une bombe a partir d'un cerf-volant",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        video: "videos/cerf_volant.mp4",
         destination: 0  ,
       },
       {
@@ -104,7 +104,7 @@ etapes = [
       },
     ],
   },
-  { // 6- Explosifs
+  { // 6- porte Explosifs
     label: "Oh non ! Voulez vous vous cacher?",
     reponses: [
       {
@@ -122,12 +122,12 @@ etapes = [
     label: "Commandons des accessoires a ACME",
     reponses: [
       {
-        label: "Une fusee",
+        label: "Une fusée.",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0  ,
       },
       {
-        label: "Des patins a roulettes",
+        label: "Des patins à roulettes",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0,
       },
