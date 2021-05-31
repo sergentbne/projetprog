@@ -34,7 +34,7 @@ function start(etape) {
       var source = document.createElement("source");
 
       source.setAttribute("src", reponse.video);
-
+debugger;
       v.appendChild(source);
       v.play();
 
