@@ -30,16 +30,20 @@ function start(etape) {
     bouton.innerText = reponse.label;
     bouton.onclick = () => {
       start(reponse.destination);
-      const v = document.getElementById("video");
-      var source = document.createElement("source");
+      if (reponse.video){
+        const v = document.getElementById("video");
+        v.innerHTML = ""
+        var source = document.createElement("source");
 
-      source.setAttribute("src", reponse.video);
-debugger;
-      v.appendChild(source);
-      v.play();
+        source.setAttribute("src", reponse.video);
+        v.appendChild(source);
+        v.load();
+        v.play();
 
-      v.style.display = "block";
-      v.requestFullscreen();
+        v.style.display = "block";
+        v.requestFullscreen();
+      }
+      
     };
     e.appendChild(bouton);
   }

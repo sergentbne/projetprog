@@ -13,7 +13,7 @@ etapes = [
       }]
   },
   { // 1
-    label: "Game over",
+    label: "Game over, rechargez la page pour recommencer.",
     type: "gameover",
     reponses: [
       ]
@@ -29,7 +29,7 @@ etapes = [
       {
         label: "Rien de tel que des explosifs",
         video: "videos/reflexion2.mov",
-        destination: 0,
+        destination: 5,
       },
       {
         label:
@@ -98,13 +98,27 @@ etapes = [
         destination: 0,
       },
       {
-        label: "",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        label: "une porte que, dès ouverte, KABOOOOM",
+        video: "videos/porte_explosive-1.mp4",
+        destination: 6,
       },
     ],
   },
-  { // 6- Rattraper
+  { // 6- Explosifs
+    label: "Oh non ! Voulez vous vous cacher?",
+    reponses: [
+      {
+        label: "Oui.",
+        video: "videos/porte_explosive-2.mp4",
+        destination: 0  ,
+      },
+      {
+        label: "Non.",
+        destination: 2,
+      },
+    ],
+  },
+  { // 7- Rattraper
     label: "Commandons des accessoires a ACME",
     reponses: [
       {
@@ -120,7 +134,7 @@ etapes = [
       {
         label: "Autre chose",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 1,
+        destination: 2,
       },
     ],
   },
