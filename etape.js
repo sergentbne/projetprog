@@ -39,8 +39,8 @@ etapes = [
       },
       {
         label: "Impossible, laissons faire",
-        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        destination: 1,
+        video: "videos/fakebouffe.mp4",
+        destination: 8,
       },
     ],
   },
@@ -138,4 +138,14 @@ etapes = [
       },
     ],
   },
+  { // 8 +vie
+    label: "cette canne étais nutritive ! vous gagnez une (1) vie. vous avez maintenant XXX vies !",
+    type: "vie",
+    reponses: [
+      {
+        label: "NICE !",
+        destination: 2,
+      }
+    ]
+  }
 ];

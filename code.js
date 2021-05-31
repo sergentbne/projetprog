@@ -12,6 +12,7 @@ function start(etape) {
   }
   if (etapedata.type == "vie") {
     vies = vies + 1;
+    start(2);
   }
 
   const vie = document.getElementById("vie");
@@ -20,7 +21,7 @@ function start(etape) {
   const e = document.getElementById("questions");
   e.innerHTML = "";
   const titre = document.createElement("h1");
-  titre.innerText = etapedata.label;
+  titre.innerText = etapedata.label.replace("XXX", vies);
   e.appendChild(titre);
 
   // questions
