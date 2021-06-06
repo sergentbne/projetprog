@@ -52,14 +52,14 @@ etapes = [
     label: "Tendons un piege",
     reponses: [
       {
-        label: "Un enorme boulet pour lui tomber sur la tete",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Une enclume sur la tête ne dois pas faire de bien.",
+        video: "videos/enclume.mp4",
         destination: 0,
       },
       {
-        label: "Des graines pour oiseau magnetiques ?",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0,
+        label: "Faisont exploser le pont !",
+        video: "videos/explosif-pont-1.mp4",
+        destination: 4,
       },
       {
         label: "Un trou, un gros trou",
@@ -69,21 +69,16 @@ etapes = [
     ],
   },
   {  // 4- Piege pt 2a
-    label: "",
+    label: "Zut, zut et rezut. on continue?",
     reponses: [
       {
-        label: "Un enorme boulet pour lui tomber sur la tete",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Absolument !",
+        video: "videos/explosif-pont-2.mp4",
         destination: 0,
       },
       {
-        label: "Des graines pour oiseau magnetiques ?",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0,
-      },
-      {
-        label: "Un trou, un gros trou",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Absolument PAS !",
+        video: "",
         destination: 2,
       },
     ],
