@@ -10,6 +10,8 @@ function start(etape) {
       return;
     }
   }
+
+
   if (etapedata.type == "vie") {
     vies = vies + 1;
     start(2);
@@ -21,6 +23,18 @@ function start(etape) {
     vies = 0
   }
   const vie = document.getElementById("vie");
+  var timer;
+  const en = document.getElementById("steve")
+    if (etapedata.type == "enigme") {
+      en.style.display = "block"
+      timer = setTimeout(() => {
+        start(0);
+        alert("Vous n'avez pas répondu à temps.");
+      }, 5000);
+  }
+  else {
+    en.style.display = "none"
+  }
   vie.innerText = "❤️".repeat(vies);
 
   const e = document.getElementById("questions");
@@ -35,6 +49,7 @@ function start(etape) {
     const bouton = document.createElement("button");
     bouton.innerText = reponse.label;
     bouton.onclick = () => {
+      clearTimeout (timer);
       start(reponse.destination);
       if (reponse.video){
         const v = document.getElementById("video");

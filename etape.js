@@ -52,14 +52,14 @@ etapes = [
     label: "Tendons un piege",
     reponses: [
       {
-        label: "Un enorme boulet pour lui tomber sur la tete",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Une enclume sur la tête ne dois pas faire de bien.",
+        video: "videos/enclume.mp4",
         destination: 0,
       },
       {
-        label: "Des graines pour oiseau magnetiques ?",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0,
+        label: "Faisont exploser le pont !",
+        video: "videos/explosif-pont-1.mp4",
+        destination: 4,
       },
       {
         label: "Un trou, un gros trou",
@@ -69,21 +69,16 @@ etapes = [
     ],
   },
   {  // 4- Piege pt 2a
-    label: "",
+    label: "Zut, zut et rezut. on continue?",
     reponses: [
       {
-        label: "Un enorme boulet pour lui tomber sur la tete",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Absolument !",
+        video: "videos/explosif-pont-2.mp4",
         destination: 0,
       },
       {
-        label: "Des graines pour oiseau magnetiques ?",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0,
-      },
-      {
-        label: "Un trou, un gros trou",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Absolument PAS !",
+        video: "",
         destination: 2,
       },
     ],
@@ -149,6 +144,61 @@ etapes = [
       {
         label: "NICE !",
         destination: 2,
+      },
+      {
+        label: "Nan, mais je voulais vraiment quitter...",
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      }
+    ]
+  },
+  { // 9 end of da game
+    label: "Il faut faire le captcha d'abord ! Quel est la réponse à cette énigme ? (vous avez 5 secondes)",
+    type: "enigme",
+    reponses: [
+      {
+        label: "6𝛛",
+        destination: 11,
+      },
+      {
+        label: String.fromCharCode(2649),
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      },
+      {
+        label: String.fromCharCode(1150),
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      },
+      {
+        label: String.fromCharCode(3210),
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      }
+    ]
+  },
+  { // 10 end of da game
+    label: "Vraiment ?",
+    type: "",
+    reponses: [
+      {
+        label: "Oui, je préfère manger du \"chez pateux\"",
+        destination: 9,
+      },
+      {
+        label: "Nan, mais je voulais vraiment quitter...",
+        video: "videos/abandonne-1.mp4",
+        destination: 1,
+      }
+    ]
+  },
+  { // 11 you win !
+    label: "Vraiment ?",
+    type: "",
+    reponses: [
+      {
+        label: "Oui, je préfère manger du \"chez pateux\"",
+        destination: 9,
       },
       {
         label: "Nan, mais je voulais vraiment quitter...",
