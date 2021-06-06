@@ -151,5 +151,20 @@ etapes = [
         destination: 1,
       }
     ]
+  },
+  { // 9 end of da game
+    label: "Vraiment ?",
+    type: "vie",
+    reponses: [
+      {
+        label: "NICE !",
+        destination: 2,
+      },
+      {
+        label: "Nan, mais je voulais vraiment quitter...",
+        video: "videos/abandonne-1.mp4",
+        destination: 1,
+      }
+    ]
   }
 ];
