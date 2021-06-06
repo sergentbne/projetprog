@@ -15,7 +15,11 @@ etapes = [
   { // 1
     label: "Game over, rechargez la page pour recommencer.",
     type: "gameover",
-    reponses: [
+    reponses: [{
+        label: "da end",
+        destination: 1,
+        video: "videos/fin.mov",
+             }
       ]
   },
   { // 2- Debut
@@ -23,7 +27,7 @@ etapes = [
     reponses: [
       {
         label: "Allons tendre un piege !",
-        video: "videos/reflexion.mp4",
+        video: "videos/reflexion1.mp4",
         destination: 3,
       },
       {
@@ -34,7 +38,7 @@ etapes = [
       {
         label:
           "Il faut etre capable de le rattraper",
-        video: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        video: "videos/reflexion3.mov",
         destination: 3,
       },
       {
@@ -122,12 +126,12 @@ etapes = [
     label: "Commandons des accessoires a ACME",
     reponses: [
       {
-        label: "Une fusée.",
+        label: "Une fusée serait parfait pour le travail.",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0  ,
       },
       {
-        label: "Des patins à roulettes",
+        label: "Des patins à roulettes ne s'use pas vite,",
         video: "https://www.youtube.com/watch?v=ggp853CtBZw",
         destination: 0,
       },
@@ -145,6 +149,11 @@ etapes = [
       {
         label: "NICE !",
         destination: 2,
+      },
+      {
+        label: "Nan, mais je voulais vraiment quitter...",
+        video: "videos/abandonne-1.mp4",
+        destination: 1,
       }
     ]
   }
