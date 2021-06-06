@@ -33,5 +33,11 @@ button {
 }
 
 #steve {
-    
+    margin: 0 0 0 -250px; 
+    display: block;
+    left: 50%;
+    position: fixed;
+    width:500px;
+    max-height: 50%;
+    bottom: 100px;
 }

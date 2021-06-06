@@ -148,17 +148,57 @@ etapes = [
       {
         label: "Nan, mais je voulais vraiment quitter...",
         video: "videos/abandonne-1.mp4",
-        destination: 1,
+        destination: 10,
       }
     ]
   },
   { // 9 end of da game
-    label: "Vraiment ?",
-    type: "vie",
+    label: "Il faut faire le captcha d'abord ! Quel est la réponse à cette énigme ? (vous avez 5 secondes)",
+    type: "enigme",
     reponses: [
       {
-        label: "NICE !",
-        destination: 2,
+        label: "6𝛛",
+        destination: 11,
+      },
+      {
+        label: String.fromCharCode(2649),
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      },
+      {
+        label: String.fromCharCode(1150),
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      },
+      {
+        label: String.fromCharCode(3210),
+        video: "videos/abandonne-1.mp4",
+        destination: 10,
+      }
+    ]
+  },
+  { // 10 end of da game
+    label: "Vraiment ?",
+    type: "",
+    reponses: [
+      {
+        label: "Oui, je préfère manger du \"chez pateux\"",
+        destination: 9,
+      },
+      {
+        label: "Nan, mais je voulais vraiment quitter...",
+        video: "videos/abandonne-1.mp4",
+        destination: 1,
+      }
+    ]
+  },
+  { // 11 you win !
+    label: "Vraiment ?",
+    type: "",
+    reponses: [
+      {
+        label: "Oui, je préfère manger du \"chez pateux\"",
+        destination: 9,
       },
       {
         label: "Nan, mais je voulais vraiment quitter...",
