@@ -13,8 +13,13 @@ function start(etape) {
   if (etapedata.type == "vie") {
     vies = vies + 1;
     start(2);
+    //Des personnes qui regarde le code vairont que il n'y a pas de code empechant d'exploiter les vies, et c'est vrai !
+    //abuser pas trop de ça svp, c'est déjà assez dur comme ça et j'ai pas envie de faire un autre truc qui va encore probablement tout casser.
   }
 
+  if (etapedata.type == "gameover") {
+    vies = 0
+  }
   const vie = document.getElementById("vie");
   vie.innerText = "❤️".repeat(vies);
 
