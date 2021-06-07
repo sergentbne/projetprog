@@ -13,10 +13,14 @@ function start(etape) {
 
 
   if (etapedata.type == "vie") {
+    if (vies >= 4) {
+      vies = vies - 1
+      alert ("sale tricheur -_-")
+    }
     vies = vies + 1;
     start(2);
     //Des personnes qui regarde le code vairont que il n'y a pas de code empechant d'exploiter les vies, et c'est vrai !
-    //abuser pas trop de ça svp, c'est déjà assez dur comme ça et j'ai pas envie de faire un autre truc qui va encore probablement tout casser.
+    //abuser pas trop de ça svp, c'est déjà assez dur comme ça et j'ai pas envie de faire un autre truc qui va encore probablement tout casser. JK JE L'AI FAIT ANYWAY
   }
 
   if (etapedata.type == "gameover") {

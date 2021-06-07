@@ -138,7 +138,7 @@ etapes = [
     ],
   },
   { // 8 +vie
-    label: "cette canne étais nutritive ! vous gagnez une (1) vie. vous avez maintenant XXX vies !",
+    label: "Cette canne étais nutritive ! vous gagnez une (1) vie. vous avez maintenant XXX vies !",
     type: "vie",
     reponses: [
       {
@@ -158,7 +158,8 @@ etapes = [
     reponses: [
       {
         label: "6𝛛",
-        destination: 11,
+        destination: 13,
+        video: "",
       },
       {
         label: String.fromCharCode(2649),
@@ -193,18 +194,9 @@ etapes = [
     ]
   },
   { // 11 you win !
-    label: "Vraiment ?",
+    label: "WINNER WHOOOOOOOO",
     type: "",
     reponses: [
-      {
-        label: "Oui, je préfère manger du \"chez pateux\"",
-        destination: 9,
-      },
-      {
-        label: "Nan, mais je voulais vraiment quitter...",
-        video: "videos/abandonne-1.mp4",
-        destination: 1,
-      }
     ]
   },
   { // 12 piege boulet
@@ -220,6 +212,59 @@ etapes = [
         label: "Je vais rester ou j'en suis rendu et revenir sur mes pas.",
         
         destination: 2,
+      }
+    ]
+  },
+  { // 13 suite de conoway
+    label: "Le captcha refuse de te laisser et tu dois passer un autre test. résous cette suite de chiffre suite de conway : 1, 11, 21, 1211, 111221, ...",
+    type: "",
+    reponses: [
+      {
+        label: "12122112",
+        destination: 0,
+      },
+      {
+        label: "312211",
+        destination: 14,
+      },
+      {
+        label: "4192231",
+        destination: 0,
+      },
+      {
+        label: "1231113",
+        destination: 0,
+      },
+      {
+        label: "312211",
+        destination: 0,
+      }
+    ]
+  },
+  { // 13 suite de conoway
+    label: "bon, je te promet que c'est le dernier. résous cette suite de Fibonacci : 1, 1, 2, 3, 5, 8, 13, ...",
+    type: "",
+    reponses: [
+      {
+        label: "17",
+        destination: 0,
+      },
+      {
+        label: "21",
+        destination: 11,
+        video: "videos/youwin.mov"
+      },
+      {
+        label: "19",
+        destination: 0,
+      },
+      {
+        label: "9",
+        destination: 0,
+      },
+      {
+        label: "25",
+        destination: 0,
       }
     ]
   }
