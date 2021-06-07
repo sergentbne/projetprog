@@ -34,7 +34,7 @@ function start(etape) {
       timer = setTimeout(() => {
         start(0);
         alert("Vous n'avez pas répondu à temps.");
-      }, 5000);
+      }, 15000);
   }
   else {
     en.style.display = "none"
