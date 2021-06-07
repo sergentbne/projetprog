@@ -288,7 +288,7 @@ etapes = [
       },
     ],
   },
-  {  // 15- Piege pt 2a
+  {  // 15- fusée
     label: "Zut, zut et rezut. on continue?",
     reponses: [
       {
