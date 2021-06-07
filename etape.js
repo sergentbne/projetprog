@@ -39,7 +39,7 @@ etapes = [
         label:
           "Il faut etre capable de le rattraper",
         video: "videos/reflexion3.mov",
-        destination: 3,
+        destination: 7,
       },
       {
         label: "Impossible, laissons faire",
@@ -92,8 +92,8 @@ etapes = [
         destination: 0  ,
       },
       {
-        label: "Une offre de graines gratuites qui explosent",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        label: "Une bonne grosse grenade.",
+        video: "videos/grenade.mp4",
         destination: 0,
       },
       {
@@ -122,17 +122,17 @@ etapes = [
     reponses: [
       {
         label: "Une fusée serait parfait pour le travail.",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0  ,
+        video: "videos/fusee-1.mp4",
+        destination: 16  ,
       },
       {
-        label: "Des patins à roulettes ne s'use pas vite,",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 0,
+        label: "mes pied sont bien assez vite",
+        video: "videos/rattrape-1",
+        destination: 15,
       },
       {
         label: "Autre chose",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
+        video: "",
         destination: 2,
       },
     ],
@@ -246,7 +246,7 @@ etapes = [
       }
     ]
   },
-  { // 13 suite de conoway
+  { // 14 suite de conoway
     label: "bon, je te promet que c'est le dernier. résous cette suite de Fibonacci : 1, 1, 2, 3, 5, 8, 13, ...",
     type: "",
     reponses: [
@@ -272,5 +272,35 @@ etapes = [
         destination: 0,
       }
     ]
-  }
+  },
+  {  // 15- Piege pt 2a
+    label: "Zut, zut et rezut. on continue?",
+    reponses: [
+      {
+        label: "Absolument !",
+        video: "videos/rattrape-2.mp4",
+        destination: 0,
+      },
+      {
+        label: "Absolument PAS !",
+        video: "",
+        destination: 2,
+      },
+    ],
+  },
+  {  // 15- Piege pt 2a
+    label: "Zut, zut et rezut. on continue?",
+    reponses: [
+      {
+        label: "Absolument !",
+        video: "videos/fusee-2.mp4",
+        destination: 0,
+      },
+      {
+        label: "Absolument PAS !",
+        video: "",
+        destination: 2,
+      },
+    ],
+  },
 ];
