@@ -62,9 +62,9 @@ etapes = [
         destination: 4,
       },
       {
-        label: "Un trou, un gros trou",
-        video: "https://www.youtube.com/watch?v=ggp853CtBZw",
-        destination: 2,
+        label: "un boulet fait bobo",
+        video: "videos/piege-boulet-1.mp4",
+        destination: 12,
       },
     ],
   },
@@ -162,18 +162,18 @@ etapes = [
       },
       {
         label: String.fromCharCode(2649),
-        video: "videos/abandonne-1.mp4",
-        destination: 10,
+        video: "",
+        destination: 0,
       },
       {
         label: String.fromCharCode(1150),
-        video: "videos/abandonne-1.mp4",
-        destination: 10,
+        video: "",
+        destination: 0,
       },
       {
         label: String.fromCharCode(3210),
-        video: "videos/abandonne-1.mp4",
-        destination: 10,
+        video: "",
+        destination: 0,
       }
     ]
   },
@@ -186,9 +186,9 @@ etapes = [
         destination: 9,
       },
       {
-        label: "Nan, mais je voulais vraiment quitter...",
-        video: "videos/abandonne-1.mp4",
-        destination: 1,
+        label: "en fait, non.",
+        video: "",
+        destination: 2,
       }
     ]
   },
@@ -204,6 +204,22 @@ etapes = [
         label: "Nan, mais je voulais vraiment quitter...",
         video: "videos/abandonne-1.mp4",
         destination: 1,
+      }
+    ]
+  },
+  { // 12 piege boulet
+    label: "Bon... le premier essait étais un échec cuisant. Peux être que ça va mieux marcher cette fois.",
+    type: "mort",
+    reponses: [
+      {
+        label: "Je suis partant !",
+        destination: 0,
+        video: "videos/piege-boulet-2.mp4",
+      },
+      {
+        label: "Je vais rester ou j'en suis rendu et revenir sur mes pas.",
+        
+        destination: 2,
       }
     ]
   }
