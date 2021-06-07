@@ -197,6 +197,11 @@ etapes = [
     label: "WINNER WHOOOOOOOO",
     type: "",
     reponses: [
+      {
+        label: "credit",
+        destination: 11,
+        video: "videos/credits.mp4"
+      }
     ]
   },
   { // 12 piege boulet
